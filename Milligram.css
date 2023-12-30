@@ -363,7 +363,7 @@ a {
   color: #2266e3; }
   .social:focus, .social:hover {
     text-decoration: none; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 800px) {
     .social {
       display: inline-block;
       width: 50%;
