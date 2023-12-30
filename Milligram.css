@@ -367,7 +367,9 @@ a {
     .social {
       display: block;
       width: 50%;
-      padding: 20px 0 0 0; } }
+      padding: 20px 0 0 0; 
+    } 
+  }
 .linkedin {
   color: #0077B5; }
   .linkedin:hover {
@@ -514,7 +516,10 @@ h6 {
   line-height: 1.4; }
 
 footer p {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  position: relative;
+  bottom: 20px; 
+}
 
 img {
   max-width: 100%; }
