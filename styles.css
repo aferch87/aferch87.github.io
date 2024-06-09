@@ -51,11 +51,11 @@ ol{
     padding: 0 20px;
     line-height: 2rem;
 }
-li a {
+a {
     color: #98908a;
     text-decoration: none;
 }
-li a:hover {
+a:hover {
     color: #fea34e;
     text-decoration: underline;
 }
