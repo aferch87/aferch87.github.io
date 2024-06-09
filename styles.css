@@ -51,15 +51,15 @@ ol{
     padding: 0 20px;
     line-height: 2rem;
 }
-li a {
-    color: #98908a;
+a{
+    color: #e4740e;
     text-decoration: underline;
 }
 a:hover {
     color: #fea34e;
     text-decoration: underline;
 }
-a:visited{
+li a {
     color: #98908a;
     text-decoration: underline;
 }
