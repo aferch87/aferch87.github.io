@@ -15,6 +15,9 @@ body {
 .text-orange{
     color: #e4740e;
 }
+.text-orange a{
+    color: #e4740e;
+}
 
 .introduction {
     margin: 40px;
