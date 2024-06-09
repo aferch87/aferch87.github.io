@@ -51,10 +51,6 @@ ol{
     padding: 0 20px;
     line-height: 2rem;
 }
-a{
-    color: #e4740e;
-    text-decoration: underline;
-}
 a:hover {
     color: #fea34e;
     text-decoration: underline;
