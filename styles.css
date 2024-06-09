@@ -53,9 +53,13 @@ ol{
 }
 li a {
     color: #98908a;
-    text-decoration: none;
+    text-decoration: underline;
 }
 a:hover {
     color: #fea34e;
+    text-decoration: underline;
+}
+a:visited{
+    color: #98908a;
     text-decoration: underline;
 }
