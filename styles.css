@@ -61,6 +61,6 @@ a{
 a:hover {
     color: #fea34e;
 }
-li a {
+a, li a {
     color: #98908a;
 }
