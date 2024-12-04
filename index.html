@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Adam Ferch">
-    <meta name="description" content=" A Design Systems Practitioner based in Bend, Oregon. Currently leading design at Splunk on the Splunk UI Design System.">
-    <meta name="keywords" content=" design systems, design tooling, design ops, Figma, user experience, user interface, accessibility, inclusive design, UX, UI, branding, prototyping, marketing, graphic design, product design, Savageewok87, Savage ewok 87, Panther, Panther squad ">
+    <meta name="description" content="A Design Systems Practitioner based in Bend, Oregon. Currently leading design at Splunk on the Splunk UI Design System.">
+    <meta name="keywords" content="design systems, design tooling, design ops, Figma, user experience, user interface, accessibility, inclusive design, UX, UI, branding, prototyping, marketing, graphic design, product design">
     
     <title>Adam Ferch</title>
     <script>
         function updateExperience() {
-            const startYear = 2013; // Replace this with the year you started your experience
+            const startYear = 2013;
             const currentYear = new Date().getFullYear();
             const experienceYears = currentYear - startYear;
             document.getElementById('experience').textContent = experienceYears;
         }
         window.onload = updateExperience;
+
+        function updateCurrentYear() {
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        }
+        window.onload = function() {
+            updateExperience();
+            updateCurrentYear();
+        }
     </script>
     <link rel="icon" type="image/x-icon" href="assets/cowboy.svg">
     <link rel="stylesheet" href="styles.css">
@@ -23,18 +31,17 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
     </style>
-
 </head>
 <body>
     <main>
         <section class="introduction">
             <h1>Howdy, I'm Adam 🤠</h1>
-            <p>A <strong class="font-normal text-orange">Design practitioner</strong> with <strong class="font-normal text-orange"><span id="experience"></span> years</strong> of product experience. In <script type="text/javascript"> document.write(new Date().getFullYear());</script> I am at <a role="link" aria-label="Splunk's product homepage" href="https://www.splunk.com/" target="_blank">Splunk</a> <strong class="font-normal text-orange">leading design on the <a role="link" href="https://splunkui.splunk.com/DesignSystem/Overview" target="_blank">Splunk UI design system</a></strong>. When not in front of my computer I race my gravel bike, play video games, and continue to grow my Lego Star Wars collection.</p>
+            <p>A <strong class="font-normal text-orange">Design practitioner</strong> with <strong class="font-normal text-orange"><span id="experience"></span> years</strong> of product experience. In <span id="currentYear"></span> I am at <a aria-label="Splunk company website" href="https://www.splunk.com/" target="_blank" rel="noopener noreferrer">Splunk</a> <strong class="font-normal text-orange">leading design on the <a aria-label="Splunk UI Design System documentation" href="https://splunkui.splunk.com/DesignSystem/Overview" target="_blank" rel="noopener noreferrer">Splunk UI Design System</a></strong>. When not in front of my computer I race my gravel bike, play video games, and continue to grow my Lego Star Wars collection.</p>
 
-            <ul role="list" class="links" aria-label="Social media">
-                <li><a role="link" aria-label="Adam's LinkedIn" href="https://www.linkedin.com/in/adam-f-13026452/" target="_blank">LinkedIn</a> /</li>
-                <li><a role="link" aria-label="Adam's mentorship page" href="https://adplist.org/mentors/adam-ferch" target="_blank">ADPList</a> /</li>
-                <li><a role="link" aria-label="Adam's Dribbble portfolio"href="https://dribbble.com/aferch87" target="_blank">Dribbble</a></li>
+            <ul class="links" aria-label="Social media">
+                <li><a aria-label="Adam's LinkedIn profile" href="https://www.linkedin.com/in/adam-f-13026452/" target="_blank" rel="noopener noreferrer">LinkedIn</a> /</li>
+                <li><a aria-label="Adam's mentorship page on ADPList" href="https://adplist.org/mentors/adam-ferch" target="_blank" rel="noopener noreferrer">ADPList</a> /</li>
+                <li><a aria-label="Adam's Dribbble portfolio" href="https://dribbble.com/aferch87" target="_blank" rel="noopener noreferrer">Dribbble</a></li>
             </ul>
         </section>
     </main>
