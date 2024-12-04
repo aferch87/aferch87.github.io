@@ -2,10 +2,21 @@ body {
     font-family: 'Inter', 'Arial', sans-serif;
     background-color: #1a1a1a;
     color: #efefef;
-    line-height: 1.5;
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 20px
+    line-height: 1.6;
+    padding: 0 1.5rem; /* Adds some padding on smaller screens */
+}
+
+main {
+    margin: 2.5rem 0;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 2.5rem;
+    font-size: 1.875rem;
+    font-weight: 700;
 }
 
 .font-normal{
@@ -19,16 +30,6 @@ body {
     color: #e4740e;
 }
 
-.introduction {
-    margin: 40px;
-}
-
-.introduction h1 {
-    padding-top: 10%;
-    font-size: 1.875rem;
-    font-weight: 400;
-}
-
 .introduction p {
     font-size: 1rem;
     font-weight: 400;
@@ -36,6 +37,10 @@ body {
     max-width: 55ch;
     color: #98908a;
     margin-bottom: 40px;
+    orphans: 3; /* Prevents orphans in text blocks */
+    widows: 3; /* Prevents orphans in text blocks */
+    text-wrap: pretty; /* Allows text to break more intelligently */
+    hyphens: auto; /* Ensures smoother text flow */
 }
 
 ul{
@@ -48,19 +53,23 @@ ul{
     margin: 0;
     padding: 0;
 }
-ol{
-    list-style: circle;
-    margin: 0;
-    padding: 0 20px;
-    line-height: 2rem;
-}
-a{
+
+a {
+    color: #98908a;
     text-decoration: underline;
     text-underline-position: under;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 1px;
+    transition: color 0.2s ease;
 }
-a:hover {
+
+a:hover, a:focus {
     color: #fea34e;
+    text-decoration-thickness: 4px;
+    outline: none; /* Removes default focus outline */
 }
-a, li a {
-    color: #98908a;
+
+a:focus {
+    outline: 3px solid #589eff;
+    outline-offset: 2px;
 }
